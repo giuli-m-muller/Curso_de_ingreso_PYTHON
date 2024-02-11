@@ -5,8 +5,9 @@ from tkinter.simpledialog import askstring as prompt
 import customtkinter
 
 '''
-nombre:
-apellido:
+nombre: Giuliana
+apellido: Muller
+tutor: Marina/Albana
 ---
 Ejercicio: entrada_salida_02
 ---
@@ -27,7 +28,14 @@ class App(customtkinter.CTk):
 
 
     def btn_mostrar_on_click(self):
-        pass
+        #descripcion_producto #snake case usar en python
+        #descripcionProductoAlmacen #lower camel case
+
+        #comida_favorita = "Pizza" #asignacion a una variable
+
+        comida_favorita = prompt("Dulce o Salado", "Ingrese su comida favorita") 
+
+        alert("Comida", comida_favorita)
         
         
     
