@@ -46,7 +46,11 @@ class App(customtkinter.CTk):
         self.btn_tiempo_llegada.grid(row=4, pady=10, padx=30, columnspan=2, sticky="nsew")
     
     def btn_cantidad_camiones_on_click(self):
-        pass
+        camion = self.txt_toneladas.get()
+
+        respuesta = int(camion) * 1 / 3500
+
+        alert ("", respuesta)
 
     def btn_tiempo_llegada_on_click(self):
         pass
